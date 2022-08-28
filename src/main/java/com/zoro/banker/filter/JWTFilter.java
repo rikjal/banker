@@ -1,7 +1,7 @@
 package com.zoro.banker.filter;
 
-import com.zoro.banker.service.UserService;
-import com.zoro.banker.utility.JWTUtility;
+import com.zoro.banker.service.security.UserService;
+import com.zoro.banker.utility.security.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

@@ -1,9 +1,9 @@
-package com.zoro.banker.controller;
+package com.zoro.banker.controller.security;
 
-import com.zoro.banker.model.JWTRequest;
-import com.zoro.banker.service.UserService;
-import com.zoro.banker.utility.JWTUtility;
-import com.zoro.banker.model.JWTResponse;
+import com.zoro.banker.model.security.JWTRequest;
+import com.zoro.banker.service.security.UserService;
+import com.zoro.banker.utility.security.JWTUtility;
+import com.zoro.banker.model.security.JWTResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -35,8 +35,8 @@ public class HomeController {
         try {
             authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(jwtRequest.getUsername(), jwtRequest.getPassword())
-        );
-        } catch (BadCredentialsException e ) {
+            );
+        } catch (BadCredentialsException e) {
             throw new Exception("INVALID CREDENTIALS", e);
         }
 

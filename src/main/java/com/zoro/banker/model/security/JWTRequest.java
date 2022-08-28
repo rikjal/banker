@@ -1,4 +1,4 @@
-package com.zoro.banker.model;
+package com.zoro.banker.model.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

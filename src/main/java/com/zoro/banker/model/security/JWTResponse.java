@@ -1,4 +1,4 @@
-package com.zoro.banker.model;
+package com.zoro.banker.model.security;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class JWTResponse {
-    private String jwtToken;
+    private String token;
 }

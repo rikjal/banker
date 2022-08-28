@@ -1,4 +1,4 @@
-package com.zoro.banker.service;
+package com.zoro.banker.service.security;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
